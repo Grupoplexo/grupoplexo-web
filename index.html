@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>plexo · Lavandería industrial y renting textil</title>
+<meta name="description" content="plexo. Lavandería industrial y renting textil. Nueva web en preparación. Contacto: info@grupoplexo.es">
+<meta name="theme-color" content="#FBFAF7">
+<link rel="canonical" href="https://grupoplexo.es/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="plexo · Lavandería industrial y renting textil">
+<meta property="og:description" content="Nueva web en preparación.">
+<meta property="og:url" content="https://grupoplexo.es/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&family=Nunito+Sans:wght@400;600&display=swap">
+<style>
+:root{--tinta:#192A16;--verde:#3F5F39;--gris:#6B7766;--arena:#D8CBB4;--fondo:#FBFAF7;color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--fondo);color:var(--tinta);font:400 16px/1.6 'Nunito Sans','Segoe UI',Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow:hidden}
+/* luz sobre tela: tres velos que se desplazan muy despacio */
+.light{position:fixed;inset:-20%;pointer-events:none;filter:blur(60px);opacity:.9}
+.light i{position:absolute;border-radius:50%;mix-blend-mode:multiply}
+.light i:nth-child(1){width:70vmax;height:42vmax;left:-8%;top:8%;background:radial-gradient(closest-side,rgba(216,203,180,.55),transparent);animation:a 26s ease-in-out infinite alternate}
+.light i:nth-child(2){width:60vmax;height:38vmax;right:-10%;top:30%;background:radial-gradient(closest-side,rgba(159,179,189,.32),transparent);animation:b 32s ease-in-out infinite alternate}
+.light i:nth-child(3){width:55vmax;height:30vmax;left:20%;bottom:-6%;background:radial-gradient(closest-side,rgba(143,179,134,.22),transparent);animation:c 38s ease-in-out infinite alternate}
+@keyframes a{to{transform:translate(12vw,6vh) rotate(8deg)}}
+@keyframes b{to{transform:translate(-10vw,-8vh) rotate(-6deg)}}
+@keyframes c{to{transform:translate(8vw,-6vh) rotate(5deg)}}
+/* textura de lino */
+.tex{position:fixed;inset:0;pointer-events:none;opacity:.55;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .43 0 0 0 0 .38 0 0 0 .08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+main{position:relative;min-height:100%;display:grid;grid-template-rows:1fr auto;padding:max(28px,env(safe-area-inset-top)) max(24px,env(safe-area-inset-right)) max(24px,env(safe-area-inset-bottom)) max(24px,env(safe-area-inset-left))}
+.c{align-self:center;justify-self:center;text-align:center;display:flex;flex-direction:column;align-items:center}
+.logo{width:clamp(180px,26vw,280px);height:auto;color:var(--verde);opacity:0;animation:in 1.4s .2s cubic-bezier(.2,.7,.2,1) forwards}
+.d{margin-top:22px;font:400 clamp(16px,1.6vw,19px)/1.4 'Outfit','Segoe UI',Arial,sans-serif;letter-spacing:.01em;color:var(--tinta);opacity:0;animation:in 1.2s .55s cubic-bezier(.2,.7,.2,1) forwards}
+.sep{width:36px;height:1px;background:var(--arena);margin:34px 0 30px;opacity:0;animation:in 1s .8s forwards}
+.s{color:var(--gris);font-size:15px;opacity:0;animation:in 1s .95s forwards}
+.m{margin-top:10px;font:500 17px 'Outfit','Segoe UI',Arial,sans-serif;color:var(--verde);text-decoration:none;border-bottom:1px solid rgba(63,95,57,.25);padding-bottom:2px;transition:border-color .25s;opacity:0;animation:in 1s 1.05s forwards}
+.m:hover,.m:focus-visible{border-color:var(--verde);outline:none}
+footer{justify-self:center;font-size:12.5px;color:var(--gris);opacity:.85}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.light i,.logo,.d,.sep,.s,.m{animation:none;opacity:1}}
+</style>
+</head>
+<body>
+<div class="light" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="tex" aria-hidden="true"></div>
+<main>
+  <div class="c">
+    <h1 style="margin:0"><svg class="logo" viewBox="-0.00 -0.00 3398.06 1000.00" role="img" aria-label="plexo"><path fill="currentColor" d="M 212.26 481.13 H 347.04 V 1000.00 H 212.26 Z M 219.79 260.11 A 330.19 330.19 0 1 1 542.45 660.38 H 390.16 V 525.61 H 542.45 A 195.42 195.42 0 1 0 360.03 260.11 Z M 169.14 660.13 A 178.57 178.57 0 1 1 178.57 303.23 H 431.27 V 438.01 H 178.57 A 43.80 43.80 0 1 0 169.14 524.58 Z"/><path fill="currentColor" d="M 1397.52 812.99 Q 1350.53 812.99 1311.21 794.77 Q 1290.11 785.18 1273.80 771.75 V 1000.00 H 1128.99 V 337.31 H 1275.72 V 369.92 Q 1292.03 356.49 1311.21 346.90 Q 1350.53 327.72 1397.52 327.72 Q 1463.69 327.72 1515.00 359.37 Q 1566.31 391.02 1595.56 445.68 Q 1624.81 500.35 1624.81 570.35 Q 1624.81 640.36 1595.56 695.03 Q 1566.31 749.69 1515.00 781.34 Q 1463.69 812.99 1397.52 812.99 Z M 1370.67 680.64 Q 1402.31 680.64 1425.81 666.26 Q 1449.31 651.87 1462.73 626.94 Q 1476.16 602.00 1476.16 570.35 Q 1476.16 537.75 1462.73 512.81 Q 1449.31 487.88 1425.81 473.97 Q 1402.31 460.07 1371.62 460.07 Q 1340.94 460.07 1317.44 473.97 Q 1293.94 487.88 1280.52 512.81 Q 1267.09 537.75 1267.09 570.35 Q 1267.09 602.00 1280.04 626.94 Q 1292.98 651.87 1316.96 666.26 Q 1340.94 680.64 1370.67 680.64 Z M 1688.10 803.40 V 107.14 H 1834.84 V 803.40 Z M 2157.07 813.95 Q 2081.31 813.95 2022.33 782.78 Q 1963.35 751.61 1929.78 695.99 Q 1896.21 640.36 1896.21 570.35 Q 1896.21 500.35 1929.30 445.20 Q 1962.39 390.06 2018.97 358.41 Q 2075.55 326.76 2146.52 326.76 Q 2215.57 326.76 2268.32 356.49 Q 2321.06 386.22 2351.27 438.97 Q 2381.48 491.71 2381.48 559.81 Q 2381.48 572.27 2380.05 586.18 Q 2378.61 600.08 2374.77 618.31 L 2041.03 619.26 Q 2043.91 629.81 2049.66 639.40 Q 2064.04 669.13 2091.38 684.96 Q 2118.71 700.78 2156.11 700.78 Q 2190.64 700.78 2218.45 688.79 Q 2246.26 676.81 2267.36 652.83 L 2347.92 733.39 Q 2313.39 773.67 2264.48 793.81 Q 2215.57 813.95 2157.07 813.95 Z M 2041.03 518.57 2244.34 517.61 Q 2241.47 504.18 2236.67 492.67 Q 2225.16 466.78 2202.62 452.87 Q 2180.09 438.97 2147.48 438.97 Q 2112.96 438.97 2087.54 454.79 Q 2062.13 470.62 2048.70 499.39 Q 2043.91 508.02 2041.03 518.57 Z M 2717.14 803.40 2630.83 664.34 2541.64 803.40 H 2381.48 L 2548.36 565.56 L 2390.12 337.31 H 2561.78 L 2639.46 463.90 L 2718.10 337.31 H 2877.30 L 2721.94 562.68 L 2886.89 803.40 Z M 3142.95 813.95 Q 3071.03 813.95 3013.01 781.82 Q 2954.98 749.69 2921.42 694.07 Q 2887.85 638.45 2887.85 569.40 Q 2887.85 500.35 2921.42 445.68 Q 2954.98 391.02 3012.53 358.89 Q 3070.07 326.76 3142.95 326.76 Q 3215.84 326.76 3273.38 358.41 Q 3330.92 390.06 3364.49 445.20 Q 3398.06 500.35 3398.06 569.40 Q 3398.06 638.45 3364.49 694.07 Q 3330.92 749.69 3273.38 781.82 Q 3215.84 813.95 3142.95 813.95 Z M 3142.95 680.64 Q 3174.60 680.64 3198.58 666.74 Q 3222.55 652.83 3235.50 627.42 Q 3248.45 602.00 3248.45 569.40 Q 3248.45 536.79 3235.02 512.33 Q 3221.59 487.88 3198.10 473.97 Q 3174.60 460.07 3142.95 460.07 Q 3112.26 460.07 3088.29 473.97 Q 3064.31 487.88 3050.89 512.81 Q 3037.46 537.75 3037.46 570.35 Q 3037.46 602.00 3050.89 627.42 Q 3064.31 652.83 3088.29 666.74 Q 3112.26 680.64 3142.95 680.64 Z"/></svg></h1>
+    <p class="d">Lavandería industrial y renting textil</p>
+    <span class="sep" aria-hidden="true"></span>
+    <p class="s">Nueva web en preparación.</p>
+    <a class="m" href="mailto:info@grupoplexo.es">info@grupoplexo.es</a>
+  </div>
+  <footer>© 2026 plexo · grupoplexo.es</footer>
+</main>
+</body>
+</html>
